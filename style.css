@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: 'league spartan', sans-serif;
+    background-image: url(./bg-pattern-top-desktop.svg), url(./bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.left{
+    flex-basis: 35%;
+}
+
+.left h1 {
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: hsl(300, 43%, 22%);
+}
+
+.left p {
+    line-height: 1.4;
+    color: hsl(300, 43%, 22%);
+}
+
+.right {
+    flex-basis: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.badge {
+    background-color: hsl(300, 24%, 96%);
+    width: 80%;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    padding: 15px 0;
+    border-radius: 8px;
+}
+
+.stars {
+    margin: 0 20px;
+}
+
+.badge:nth-of-type(2) {
+    margin-left: 55px;
+}
+
+.badge:nth-of-type(3) {
+    margin-left: 110px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviews {
+    background-color: hsl(300, 43%, 22%);
+    flex-basis: 31%;
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+}
+
+.reviews p {
+    line-height: 1.4;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.person img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.verify p{
+    color: rgba(238, 104, 164, 0.7);
+    margin-top: 2px;
+}
+
+.reviews:nth-of-type(2) {
+    margin-top: 40px;
+}
+
+.reviews:nth-of-type(3) {
+    margin-top: 80px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        text-align: center;
+        padding: 70px 0;
+    }
+    .top {
+        flex-direction: column;
+    }
+    .left h1 {
+        font-size: 32px;
+    }
+    .left p {
+        margin-bottom: 20px;
+    }
+    .badge {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .badge:nth-of-type(2) {
+        margin-left: 0;
+    }
+    
+    .badge:nth-of-type(3) {
+        margin-left: 0;
+    }
+    .bottom {
+        flex-direction: column;
+    }
+    .reviews:nth-of-type(2) {
+        margin-top: 0;
+    }
+    
+    .reviews:nth-of-type(3) {
+        margin-top: 0;
+    }
+    .reviews{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
