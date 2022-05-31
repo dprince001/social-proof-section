@@ -5,7 +5,6 @@
 }
 
 body {
-    height: 100vh;
     overflow-x: hidden;
     font-family: 'league spartan', sans-serif;
     background-image: url(./bg-pattern-top-desktop.svg), url(./bg-pattern-bottom-desktop.svg);
@@ -13,10 +12,14 @@ body {
     background-position: left top, right bottom;
 }
 
+main {
+    min-height: 100vh;
+}
+
 .container {
     width: 85%;
     margin: auto;
-    padding: 30px 0;
+    padding: 40px 0;
 }
 
 .top {
@@ -98,6 +101,10 @@ body {
     width: 40px;
     border-radius: 50%;
     margin-right: 20px;
+}
+
+.verify h2 {
+    font-size: 16px;
 }
 
 .verify p{
